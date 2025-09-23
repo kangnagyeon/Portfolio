@@ -5492,7 +5492,9 @@ textarea.form-control-lg {
 .d-flex {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
-  display: flex !important; }
+  display: flex !important; 
+  flex-direction: column;
+}
 
 .d-inline-flex {
   display: -webkit-inline-box !important;
@@ -9087,10 +9089,9 @@ a {
     left: 0; }
 
 .heading-2 {
-  font-size: 90px;
-  font-weight: 700;
-  line-height: 1;
-  font-family: 'Playfair Display', serif; }
+  font-size: 4rem;
+  font-weight: 400;
+  font-family: 'Pretendard' }
   @media (max-width: 991.98px) {
     .heading-2 {
       font-size: 60px; } }
@@ -9098,6 +9099,12 @@ a {
     .heading-2 {
       font-size: 40px; } }
 
+.heading-2 span {
+  font-weight: 700;
+}
+
+      
+      
 .heading {
   font-size: 80px;
   line-height: 1;

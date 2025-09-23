@@ -3561,9 +3561,9 @@
 .icon-lock2:before {
   content: "\e897";
 }
-.icon-photo2:before {
+/* .icon-photo2:before {
   content: "\e410";
-}
+} */
 .icon-image_aspect_ratio:before {
   content: "\e3f5";
 }
@@ -3600,9 +3600,9 @@
 .icon-tag_faces:before {
   content: "\e420";
 }
-.icon-link2:before {
+/* .icon-link2:before {
   content: "\e157";
-}
+} */
 .icon-invert_colors:before {
   content: "\e891";
 }
@@ -4146,9 +4146,9 @@
 .icon-play_arrow:before {
   content: "\e037";
 }
-.icon-play_circle_filled:before {
+/* .icon-play_circle_filled:before {
   content: "\e038";
-}
+} */
 .icon-play_circle_outline:before {
   content: "\e039";
 }

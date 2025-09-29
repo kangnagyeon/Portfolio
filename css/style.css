@@ -9979,6 +9979,10 @@ a {
 
   .about-mail .contact-icon {
     width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .about-mail .contact-icon svg path {

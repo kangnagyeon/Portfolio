@@ -550,8 +550,33 @@ progress {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+  margin: 0 30px;
 }
+
+.about-items .about_me {
+  width: 40%;
+}
+
+.about-items .text_area .intro-line {
+  font-size: 1.25rem;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.about-items .text_area .text-name {
+  font-size: 1.125rem;
+  color: #292929;
+  margin-bottom: 6px;
+}
+
+
+.about-items .text_area span {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #C85B3A;
+}
+
+
 
 #portfiolio {
       background: #f8f9fa;
@@ -9142,9 +9167,15 @@ a {
   font-size: 4rem;
   font-weight: 400;
   font-family: 'Pretendard' }
+  .heading-1 {
+    font-size: 2.5rem;
+  }
   @media (max-width: 991.98px) {
     .heading-2 {
-      font-size: 60px; } }
+      font-size: 60px; } 
+    .heading-1 {
+    font-size: 24px; } 
+    }
   @media (max-width: 991.98px) {
     .heading-2 {
       font-size: 40px; } }
@@ -9625,7 +9656,7 @@ a {
   .main-text {
     display: flex;
     gap: 45px;
-    animation: line-text 4s linear infinite;
+    animation: line-text 15s linear infinite;
   }
 
   .main-text h3 {

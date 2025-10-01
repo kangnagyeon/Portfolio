@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="9.316" height="15.663" viewBox="0 0 9.316 15.663">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <path id="more_button" class="cls-1" d="M555.855,841.335l6.9,6.418-6.9,6.418" transform="translate(-554.442 -839.922)"/>
+</svg>

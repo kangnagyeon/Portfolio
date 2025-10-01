@@ -61,9 +61,9 @@
 .gslide-external{
   display:-webkit-box;display:-ms-flexbox;display:flex;width:100%;min-width:100%;background:#fff;padding:0;overflow:auto;max-height:75vh;height:100%
 }
-/* .gslide-media{
+.gslide-media{
   display:block;display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;display:-webkit-box;display:-ms-flexbox;display:flex;width:auto
-} */
+}
 .zoomed .gslide-media{
   -webkit-box-shadow:none!important;box-shadow:none!important
 }

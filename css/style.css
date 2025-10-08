@@ -9170,6 +9170,10 @@ a {
   .heading-1 {
     font-size: 2.5rem;
   }
+
+  .heading-1 .text-accen {
+    color: #C85B3A;
+  }
   @media (max-width: 991.98px) {
     .heading-2 {
       font-size: 60px; } 
@@ -9645,7 +9649,10 @@ a {
 
 
   .main-text-box {
+    width: 100%;
+    white-space: nowrap; 
     margin: 50px 0 30px;
+    padding: 20px 0;
     text-transform: uppercase;
     /* background: #000; */
     color: #C85B3A;
@@ -9654,17 +9661,22 @@ a {
   }
 
   .main-text {
+    
     display: flex;
-    gap: 45px;
-    animation: line-text 15s linear infinite;
+    gap: 40px;
+    animation: line-text 13s linear infinite;
+    align-items: center;
   }
 
-  .main-text h3 {
-    margin: 0;
-    padding: 10px;
+  .main-text .icon img {
+    width: 100px;
+  }
+
+  .main-text p {
+    /* margin: 0; */
+    /* padding: 10px; */
     font-size: 2.5rem;
     font-weight: 700;
-    
   }
 
   @keyframes line-text {

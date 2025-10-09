@@ -13,6 +13,22 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+@font-face {
+  font-family: 'InkLiquid';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff') format('woff');
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IncheonEducation';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/iceJaram-Rg.woff2') format('woff2');
+  font-weight: normal;
+  font-display: swap;
+}
+
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -556,14 +572,18 @@ progress {
 .about-items .about_me {
   width: 40%;
 }
-
-.about-items .text_area .intro-line {
-  font-size: 1.25rem;
-  color: #000;
-  margin-bottom: 15px;
+.about-items .text_area {
+  width: 
 }
 
-.about-items .text_area .text-name {
+.about-items .text_area .intro-line {
+  font-size: 1.75rem;
+  color: #000;
+  margin-bottom: 15px;
+  font-family: 'IncheonEducation';
+}
+
+.about-items .text_area .about_text {
   font-size: 1.125rem;
   color: #3e4147;
   margin-bottom: 6px;
@@ -571,9 +591,17 @@ progress {
 
 
 .about-items .text_area span {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: 500;
   color: #C85B3A;
+}
+
+@media screen and (max-width: 991px) {
+  .about-items {
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+  }
 }
 
 
@@ -587,6 +615,7 @@ progress {
     gap: 6.82%;
 
   }
+
 
   .row > * {
     -ms-flex-negative: 0;
@@ -9262,7 +9291,10 @@ a {
 }
 
 .btn.btn-black {
+  width: 200px;
   background-color: #222;
+  display: flex;
+  justify-content: space-between;
   color: #fff;
   padding: 14px 30px;
   border: 2px solid;
@@ -9994,7 +10026,7 @@ a {
   .profile-contact {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: top;
     color: #000;
     width: 100%;
     margin-top: 50px;
@@ -10003,6 +10035,7 @@ a {
   .profile-contact .about-mail p {
     font-size: 2rem;
     font-weight: 600;
+    text-align: left;
   }
   
   .profile-contact .contact-intro p {

@@ -9869,15 +9869,19 @@ a {
   .media-1 img {
     -o-object-fit: cover;
     object-fit: cover;
-    -webkit-animation: 15s all linear;
-    -o-animation: 15s all linear;
+    
     /* transition: 15s all linear;  */
+    
+  }
+  .media-1:hover img {
     animation: project 15s linear infinite;
+    -webkit-animation: project 15s all linear;
+    -o-animation: project 15s all linear;
   }
 
   @keyframes project {
     0% {transform: rotate(0);}
-    100% {transform: rotate(100%);}
+    100% {transform: rotate(360deg);}
   }
 
   .media-1 .media-1-content {
@@ -9931,11 +9935,6 @@ a {
     -webkit-transition-delay: 0.09s;
     -o-transition-delay: 0.09s;
     transition-delay: 0.09s; } */
-  .media-1:hover img {
-    -webkit-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    transform: rotate(360deg); 
-  }
 
   .project-items {
     display: flex;

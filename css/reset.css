@@ -38,6 +38,8 @@ body {position: relative;}
 button {
   all: unset;
   cursor: pointer;
+  background: none;
+  border: none;
 }
 
 .blind {

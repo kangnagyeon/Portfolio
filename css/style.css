@@ -284,7 +284,7 @@ button:focus {
   outline: -webkit-focus-ring-color auto 5px; }
 
 input,
-button,
+/*button,*/
 select,
 optgroup,
 textarea {
@@ -9945,6 +9945,12 @@ a {
     justify-content: center;
     margin-bottom: 80px;
   }
+
+  .project-items button {
+    border: none;
+    background: none;
+  }
+  
 
   .project-items a {
     position: relative;

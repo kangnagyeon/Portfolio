@@ -1,0 +1,677 @@
+@font-face {
+    font-family: 'YesMyungjo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/YESMyoungjo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'YesMyungjo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/YESMyoungjo-Bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'YunaSTuesday';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2506-1@1.0/TheTuesdayofYounah.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+
+/* search */
+
+.search_bar {
+  width: 768px;
+  height: 60px;
+  background-color: #fafafa;
+  border-radius: 55px;
+  display: flex;
+  align-items: center;
+  margin: 70px auto 180px;
+  gap: 30px;
+}
+
+.search_bar input::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.search_bar input::-webkit-search-decoration,
+.search_bar input::-webkit-search-cancel-button,
+.search_bar input::-webkit-search-results-button,
+.search_bar input::-webkit-search-results-decoration {
+    display: none;
+}
+
+
+.search {
+  width: 650px;
+  height: 36px;
+  background: transparent;
+  margin-left: 30px;
+  border: none;
+  outline: none;
+  font-size: 1.25rem;
+}
+
+/* main banner */
+.main {
+  display: flex;
+  overflow: hidden;
+  gap: 0;
+}
+
+.slide_track {
+  width: max-content;
+  flex: 0 0 100%;
+  display: flex;
+  /* 슬라이드 가로 나열 */
+  width: max-content;
+  /* 내용물만큼 폭 자동 확장 */
+  transition: transform 0.5s ease;
+}
+
+.main .swiper-slide {
+  width: 100%;
+  flex: 0 0 100%;
+  height: 761px;
+  overflow: hidden;
+  transition: transform 0.5s ease;
+}
+
+/* jungyoungsun */
+.main .jang a {
+  width: 100%;
+  height: 761px;
+  background: url(../img/jungyoungsun_bg.png) no-repeat 50%/cover;
+}
+
+
+/* seou */
+.main .seou a {
+  width: 100%;
+  height: 761px;
+  background: url(../img/Seou_bg.png) no-repeat 50%/cover;
+
+  position: relative;
+}
+
+.main .seou .slide_info {
+  position: absolute;
+  background: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  left: 9.5%;
+  top: 60.5%;
+}
+
+.main .seou .exhibition_category {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.main .seou .work_title {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.main .seou .slide_info img {
+  width: 58px;
+  height: auto;
+}
+
+.main .seou .slide_info p
+, .main .seou .slide_info img {
+  background: none;
+  color: #fafafa;
+}
+
+
+/* gwa */
+.main .gwa a {
+  width: 100%;
+  height: 761px;
+  background: url(../img/Gwacheon_bg.png) no-repeat 50%/cover;
+
+  position: relative;
+}
+
+.main .gwa .slide_info {
+  position: absolute;
+  background: none;
+  display: flex;
+  flex-direction: column;
+
+  left: 6%;
+  top: 57.4%;
+}
+
+.main .gwa .slide_info p
+, .main .gwa .slide_info div{
+  background: none;
+  color: #fafafa;
+}
+
+.main .gwa .exhibition_category {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.main .gwa .work_title {
+  font-size: 3.125rem;
+  font-weight: 900;
+
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  margin: 15px 0 35px;
+}
+
+.main .gwa .work_title p {
+  width: 5px;
+  height: 45px;
+  background: #fafafa;
+}
+
+.main .gwa .exhibition_date {
+  font-size: 2.5rem;
+  font-weight: 600;
+
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.main .gwa .exhibition_date p {
+  width: 115px;
+  height: 5px;
+  background: #fafafa;
+}
+
+/* modern */
+.main .modern a {
+  width: 100%;
+  height: 761px;
+  background: url(../img/ModernEncounters_bg.png) no-repeat 50%/cover;
+
+  position: relative;
+  
+}
+
+.main .modern .slide_info {
+  position: absolute;
+  background: none;
+  display: flex;
+  flex-direction: column;
+
+  left: 5%;
+  top: 17.61%;
+}
+
+.main .modern .slide_info p
+, .main .modern .slide_info div{
+  background: none;
+  color: #fafafa;
+
+  font-family: 'YesMyungjo';
+}
+
+.main .modern .exhibition_category {
+  font-size: 1.25rem;
+  font-weight: 400;
+
+  margin-bottom: 5px;
+}
+
+.main .modern .work_title {
+  font-size: 4.375rem;
+  font-weight: 400;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* water */
+.main .water a {
+  width: 100%;
+  height: 761px;
+  background: url(../img/water_bg.png) no-repeat 50%/cover;
+
+  position: relative;
+}
+
+.main .water .slide_info {
+  position: absolute;
+  background: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  left: 5%;
+  top: 17.61%;
+}
+
+.main .water .slide_info p
+, .main .water .slide_info div{
+  background: none;
+  color: #fafafa;
+
+  font-family: 'YunaSTuesday';
+}
+
+.main .water .artwork-title-main {
+  font-size: 14.375rem;
+  font-weight: 400;
+}
+
+.main .water .artwork-title-sub {
+  font-size: 8.75rem;
+  font-weight: 400;
+  
+  margin: -92px 0 0 190px;
+}
+
+.main .water .work_title {
+  display: flex;
+  flex-direction: column;
+}
+
+.main .water .exhibition-period {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+
+.main .water .exhibition-period p {
+  font-weight: 600;
+
+  font-family: Pretendard;
+}
+
+.main .water .dates_start,
+.main .water .dates_end {
+  font-size: 1.375rem;
+}
+
+.main .water .dates_end {
+  margin-left: 84px;
+}
+
+.main .water .location {
+  font-size: 1.5625rem;
+  margin-left: 126px;
+}
+
+
+/* ourtomorrow */
+.main .OurTomorrow a {
+  width: 100%;
+  height: 761px;
+  background: url(../img/OurTomorrow_bg.png) no-repeat 50%/cover;
+
+  position: relative;
+}
+
+.main .OurTomorrow .slide_info {
+  width: 549px;
+  height: 427px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 0 50px 50px 0;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  left: 0;
+  top: 26%;
+}
+
+.main .OurTomorrow .slide_info p
+, .main .OurTomorrow .slide_info div{
+  background: none;
+  color: #fafafa;
+}
+
+.main .OurTomorrow .artwork-title-main {
+  font-size: 3.75rem;
+  font-weight: 800;
+
+  margin-bottom: 15px;
+}
+
+.main .OurTomorrow .artwork-title-sub
+, .main .OurTomorrow .location {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.main .OurTomorrow .exhibition_date {
+  font-size: 1.875rem;
+  font-weight: 800;
+
+  margin-top: 10px;
+}
+
+/* main */
+/* section_1 */
+.content_poster {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.content_poster .exhibition {
+  width: 264px;
+  height: 449px;
+  overflow: hidden;
+}
+
+.exhibition-itme {
+  flex: 0 0 264px;
+  width: 100%; /* 한 번에 한 슬라이드씩 보이도록 */
+}
+
+.content_poster .exhibition-list {
+  
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.poster_text {
+  color: #fafafa;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.poster {
+  margin: 15px 0 20px 0;
+}
+
+.indicator {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  overflow: visible; /* 짤림 방지 */
+}
+
+.indicator span {
+  width: 10px;
+  height: 10px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  transition: all 0.3s ease;
+}
+
+.indicator span.on {
+  width: 20px;
+  background: rgb(255, 255, 255);
+}
+
+/* seou */
+
+
+
+/* section_2,3 */
+.box {
+  background-color: #fafafa;
+  margin-top: 88px;
+  padding-bottom: 249px;
+}
+
+/* section_2 */
+.content_second {
+  margin-left: auto;
+  padding: 92px 0 0 0;
+  display: flex;
+  gap: 74px;
+  background-color: #fafafa;
+}
+
+.section-header > a img {margin-right: 15px;}
+
+/* 새소식 */
+
+.new {
+  width: 646px;
+  height: 463px;
+  background-color: #fafafa;
+}
+
+.news-header {
+  height: 41px;
+  font-size: 2.1875rem;
+  font-weight: 800;
+  margin: 0 0 62px 0;
+  background-color: #fafafa;
+  display: flex;
+  justify-content: space-between;
+}
+
+.view_all_btn {
+  align-items: center;
+  margin-top: auto;
+}
+
+.view_all_btn a {
+  background: #fafafa;
+  display: flex;
+  gap: 5px;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.view_all_btn p {
+  background: #fafafa;
+}
+
+.news-list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 47px;
+  background: #fafafa;
+}
+
+.news-list ul li{
+  justify-content: space-between;
+  background-color: #fafafa;
+}
+
+.text {
+  display: flex;
+  width: 646px;
+}
+
+.news-location {
+  width: 52px;
+  font-size: 1.125rem;
+  font-weight: 800;
+  background-color: #fafafa;
+}
+
+.news-title {
+  width: 447px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0 37px 0 20px;
+  background-color: #fafafa;
+}
+
+.news-date {
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: #fafafa;
+}
+
+/* 뉴스레터 */
+
+.MMCA_news {
+  width: 680px;
+  height: 501px;
+  background-color: #fafafa;
+}
+
+.news-letter-header {
+  height: 41px;
+  font-size: 2.1875rem;
+  font-weight: 800;
+  margin: 0 0 41px 0;
+  background-color: #fafafa;
+  display: flex;
+  justify-content: space-between;
+}
+
+.news-letter-list {
+  display: flex;
+  width: 925px;
+  height: 419px;
+  overflow: hidden;
+  background-color: #fafafa;
+  /* padding-right: 331px; */
+}
+
+.newsletter-items {
+  /* width: 100%; */
+  /* overflow: hidden; */
+  display: flex;
+  background-color: #fafafa;
+  gap: 45px;
+}
+
+.newsletter-items .swiper-slide {
+  width: auto;
+  flex-shrink: 0;
+}
+
+.newsletter-items .swiper-slide:last-child {
+  margin-right: 150px;
+}
+
+.newsletter-items a {display: block;}
+
+.letter-image {
+  width: 100%;
+  height: 100%;
+  background-color: #fafafa;
+}
+
+.title_MMCA {
+  height: 21px;
+  margin: 20px 0 10px 0;
+  background-color: #fafafa;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.text_MMCA {
+  height: 37px;
+  width: 336px;
+  text-wrap: wrap;
+  background-color: #fafafa;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+/* section_3 */
+.content_thrid {
+  margin: 205px auto 0;
+  background-color: #fafafa;
+}
+
+.residency-header img {margin-right: 15px;}
+
+.residency-name img {margin-right: 12px;}
+
+.residency-header {
+  font-size: 2.1875rem;
+  font-weight: 800;
+  background-color: #fafafa;
+  margin-bottom: 130px;
+}
+
+.residency-changdong {
+  background-color: #fafafa;
+  margin-bottom: 330px;
+  margin-left: 66px;
+  position: relative;
+}
+
+
+.residency-info {
+  width: 429px;
+  background-color: #fafafa;
+  flex-direction: column;
+  position: absolute;
+  top: 200px;
+  left: 822px;
+}
+
+
+
+.residency-name {
+  background-color: #fafafa;
+  font-size: 1.25rem;
+  font-weight: 800;
+
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 18px;
+}
+
+.residency-address {
+  background-color: #fafafa;
+  margin-left: 16px;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.residency-address p {background: #fafafa;}
+
+.residency-map {
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  background-color: #fafafa;
+  margin: 21px 0 0 16px;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+
+.residency-map a {
+  background-color: #fafafa;
+  color: #457B07;
+  white-space: nowrap;
+}
+
+.residency-map img {margin-left: 10px;
+}
+
+.residency-goyang {
+  background-color: #fafafa;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.goyang {
+  width: 499px;
+  position:absolute;
+  top: -99px;
+  left: 836px;
+}

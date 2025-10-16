@@ -1,0 +1,46 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #1a1a1a;
+  font-family: Pretendard; 
+}
+
+
+
+img {
+  max-width: 100%;
+}
+
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  background: #fafafa;
+}
+
+ul {
+  list-style: none;
+  /* display: flex; */
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background: #E1E1E1;
+}
+
+body {position: relative;}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+.blind {
+  position: absolute;
+  left: -9999px;
+}

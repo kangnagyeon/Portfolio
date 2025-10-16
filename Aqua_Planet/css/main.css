@@ -1,0 +1,483 @@
+/* .main {
+  width: 100%;
+} */
+
+.fp-table {
+  /* background: skyblue; */
+
+  padding-top: 143px;
+}
+
+/* main */
+.BG .main .main_text_area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.BG .main .main_text_area .text_area {
+  /* margin-top: 447px; */
+  /* align-items: center; */
+  text-align: center;
+}
+
+.main .main_text_area h2:nth-child(1) {
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+
+.main .main_text_area h2:nth-child(2) {
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 20px 0 80px;
+}
+
+.main .main_text_area p {
+  font-size: 1.5625rem;
+  font-weight: 600;
+
+}
+
+/* Information */
+.Information {
+  padding-top: 187px;
+}
+
+.Information article {
+  display: flex;
+  justify-content: center;
+}
+
+.Information h3 {
+  margin-bottom: 85px;
+}
+
+/* 운영시간 */
+.Information article .Information_time,
+.Information article .Information_price {
+  width: 400px;
+  height: 454px;
+  background: var(--brand-color);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Information article .Information_time .time_text_area {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  text-align: center;
+}
+
+.Information article p {
+  font-size: 2.125rem;
+  font-weight: var(--font-weight600);
+  margin-bottom: 59px;
+}
+
+.Information article th {
+  font-size: 1.5625rem;
+  font-weight: var(--font-weight600);
+  /* text-align: left; */
+  padding-left: 8px;
+}
+
+.Information article td {
+  /* text-align: left; */
+  font-size: 1.125rem;
+  font-weight: var(--font-weight400);
+}
+
+.Information article span {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  display: block;
+}
+
+.Information article table {
+  width: 272px;
+  height: 106px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.Information article .small_text_area {
+  font-size: 0.875rem;
+  font-weight: var(--font-weight400);
+}
+
+.Information .Information_time .operation-hours {
+  margin-bottom: 5px;
+}
+
+/* 운영요금 */
+.Information article .Information_price {
+  background: var(--white);
+  color: var(--black);
+}
+
+.Information article .price_text_area {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.Information .Information_price p {
+  margin-bottom: 61px;
+}
+
+.Information .Information_price table {
+  width: 310px;
+  height: 137px;
+}
+
+.Information .price_text_area th {
+  padding-left: 12px;
+  text-align: left;
+}
+.Information .price_text_area td {
+  padding-right: 12px;
+}
+
+/* 버튼 */
+.Information .Information_price .price_btn {
+  padding: 8px 20px;
+  display: block;
+  font-size: 1.125rem;
+  font-weight: 500;
+  background: var(--brand-color);
+  color: var(--white);
+  border-radius: 30px;
+  text-align: center;
+}
+
+.Information .Information_price .price_btn:hover {
+  color: var(--black);
+  background: var(--point-color);
+}
+
+.Information .info-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  /* padding-bottom: 105px; */
+  line-height: 1.5rem;
+}
+
+.Information .info-text p {
+  text-align: left;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* grop */
+
+/* .main .group {
+  display: flex;
+  justify-content: space-between;
+} */
+
+.main .group .fp-overflow {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 78px;
+}
+
+.main .group h3 {
+  margin-top: 16px;
+}
+
+.main .group .price_btn a{
+  font-size:1.25rem;
+  font-weight: 600;
+  width: 100px;
+  height: 44px;
+  display: block;
+  text-align: center;
+  background: var(--white);
+  color: var(--brand-color);
+  border-radius: 30px;
+  line-height: 44px;
+  margin-top: 40px;
+}
+
+.main .group .price_btn a:hover {
+  background: var(--point-color);
+  color: var(--black);
+}
+
+.main .group article:nth-child(2) {
+  display: flex;
+  gap: 60px;
+}
+
+.main .group .group-cards {
+  /* margin-top: 221px;
+  margin-left: auto;
+  margin-right: 168px;
+  padding-bottom: 79px; */
+  display: flex;
+  gap: 60px;
+}
+
+.main .group .left_box,
+.main .group .right_box {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.main .group .right_box {
+  margin-top: 60px;
+  margin-right: 190px;
+}
+
+.main .group article .box {
+  width: 307px;
+  height: 280px;
+  border: 2px solid;
+  border-radius: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(15px);
+}
+
+.main .group article .box:hover {
+  background: var(--white);
+  border: none;
+  color: var(--black);
+}
+
+.main .group article .box:hover svg path {
+  fill: var(--black);
+}
+
+.group .group-cards .box a {
+  margin: 0 auto ;
+  display: block;
+}
+
+.main .group article .box>div {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.main .group article .box svg {
+  margin: 0 auto 14px;
+}
+
+.main .group .text-note,
+.main .group .info-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.main .group article .box #email-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.main .group article .box strong {
+  display: block;
+  font-size: var(--font-size28);
+  font-weight: var(--font-weight600);
+  margin-bottom: 12px;
+}
+
+.main .group article .email strong {
+  margin: 0;
+}
+
+.main .group article .email button {
+  margin: 0 auto;
+}
+
+.group .box .card-description {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.main .group article .box p {
+  font-size: var(--font-size16);
+  font-weight: var(--font-weight400);
+}
+
+.main .group article .box small  {
+  font-size: 0.75rem;
+  font-weight: var(--font-weight400);
+}
+
+/* program */
+.program {padding-top: 206px; position: relative;}
+
+.program h3 {
+  margin-bottom: 65px;
+}
+
+.program .next {
+  position: absolute;
+  top: 250px;
+  right: 241px;
+  z-index: 9999;
+}
+
+.program .prev {
+  position: absolute;
+  top: 250px;
+  right: 67px;
+  z-index: 9999;
+}
+
+.program .program_btn img {
+  width: 40px;
+}
+
+.swiper-button-prev svg,
+.swiper-button-next svg {
+  display: none;
+}
+
+.program article {
+  width: 1547px;
+  overflow: hidden;
+  /* margin-left: 124px; */
+  margin-left: 132px;
+  /* margin-bottom: 65px; */
+  position: relative;
+}
+
+.program .swiper-wrapper {
+  display: flex;
+  /* gap: 40px; */
+  margin-left: 314px;
+  overflow: visible;
+  /* 호버 시 확장 가능 */
+}
+
+.program article .program_box {
+  width: 440px;
+  height: 570px;
+  flex: 0 0 auto;
+  border-radius: 0 120px 0 0;
+  position: relative;
+  overflow: hidden;
+  transition: width 0.3s ease;
+  z-index: 3;
+  /* transform-origin: right center; */
+}
+
+.program article .program_box .inner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 440px;
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+/* .program article .program_box:hover {
+  width: 754px;
+  z-index: 12;
+} */
+
+.program article .program_box:last-child {
+  margin-right: 754px;
+}
+
+.program article .program_box img {
+  /* width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right top;
+  display: block; */
+
+  /* position: absolute;
+  right: 0; */
+  width: auto;
+}
+
+.program .program_box:not(:nth-child(2)) p {
+  font-size: 2.5rem;
+  font-weight: var(--font-weight600);
+  position: absolute;
+  top: 414px;
+  left: 50px;
+  z-index: 15;
+}
+
+.program .program_box:nth-child(2) p {
+  font-size: 2.5rem;
+  font-weight: var(--font-weight600);
+  position: absolute;
+  top: 462px;
+  left: 50px;
+  z-index: 15;
+}
+
+@media screen and (max-width: 1440px) {
+  .program h3 {
+    color: var(--black);
+  }
+}
+
+/* event */
+.event {
+  padding-top: 223px;
+}
+
+.event h3 {
+  margin-bottom:50px;
+  color: var(--black);
+}
+
+.event .btn .event_prev {
+  position: absolute;
+  bottom: 288px;
+  z-index: 10;
+}
+
+.event .btn .event_next {
+  position: absolute;
+  bottom: 288px;
+  right: 0;
+  z-index: 10;
+}
+
+.event .event_container {
+  width: 1144px;
+  height: 610px;
+  /* position: relative; */
+  margin: 0 auto;
+}
+
+.event .swiper-slide {
+  width: 440px;
+}
+
+.event .event_container .event_box {
+  /* position: absolute; */
+  /* top: 50%; */
+  width: 440px;
+  height: 570px;
+  /* box-shadow: 0 15px 15px 7px rgba(54,54,54,0.12); */
+  transition: transform 0.5s ease, z-index 0.5s ease, opacity 0.5s ease;
+  border-radius: 0 120px 0 120px;
+}
+
+.event .event_container .event_box img {
+  border-radius: 0 120px 0 120px;
+}

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <g id="Dropdown_btn" transform="translate(-194 -364)">
+    <g id="타원_7" data-name="타원 7" transform="translate(194 364)" fill="none" stroke="#000" stroke-width="1">
+      <circle cx="15" cy="15" r="15" stroke="none"/>
+      <circle cx="15" cy="15" r="14.5" fill="none"/>
+    </g>
+    <path id="dropdown-btn" d="M1673.242,10173l-6.122,8.809Zm-12.242,0,6.12,8.809Z" transform="translate(-1458.121 -9797.402)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>

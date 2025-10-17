@@ -8782,7 +8782,8 @@ textarea.form-control-lg {
           color: #000;
           background: #ff4c4c;
           border-color: #ff4c4c; }
-      .site-nav .site-navigation .site-menu > li:hover > a {
+      .site-nav .site-navigation .site-menu > li > a:hover,
+      .site-nav .site-navigation .site-menu > li.active > a {
         color: #C85B3A; }
     .site-nav .site-navigation .site-menu .has-children {
       position: relative; }
@@ -9976,7 +9977,7 @@ a {
     visibility: hidden;
   }
 
-  .project-links a {
+  .project-links a, .project-links button {
     background: #fafafa;
     border-radius: 50px;
     color: #C85B3A;
@@ -10138,7 +10139,9 @@ a {
 .site-footer {
   font-size: 14px;
   color: #888;
-  padding: 70px 0; }
+  padding: 70px 0; 
+  background: rgb(248, 249, 250);
+}
   .site-footer a {
     color: #777;
     position: relative;

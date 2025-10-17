@@ -9983,9 +9983,33 @@ a {
     padding: 10px 20px;
   }
 
+  .project-links button {
+    border: none;
+  }
+
   .project-links a:hover {
     background: #C85B3A;
     color: #fafafa;
+  }
+
+  .project-overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background: rgba(0, 0, 0, 0.8);
+    overflow-y: auto;
+    display: none;
+  }
+
+  .project-overlay .overlay-content {
+   text-align: center;
+  }
+
+  body.overlay-open {
+    overflow: hidden;
   }
 
   @media (min-width: 1440px) {

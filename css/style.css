@@ -485,9 +485,7 @@ progress {
 }
 
 .main-banner {
-  margin-top: 270px;
-  margin-left: 45.6%;
-  max-width: 55%;
+  max-width: 100%;
 }
 
 
@@ -9171,16 +9169,17 @@ a {
   overflow: hidden;
   -o-object-fit: cover;
   object-fit: cover; }
-  .hero img, .bg-image img {
+  .hero img {
     position: absolute;
-    -webkit-transform: scale(1.3) translate(0%, -15%);
+    /* -webkit-transform: scale(1.3) translate(0%, -15%);
     -ms-transform: scale(1.3) translate(0%, -15%);
-    transform: scale(1.3) translate(0%, -15%); 
+    transform: scale(1.3) translate(0%, -15%);  */
   }
   .hero a, .bg-image a {
     color: #fff; }
   .hero.overlay, .bg-image.overlay {
-    position: relative; }
+    /* position: relative; */
+  }
     .hero.overlay:before, .bg-image.overlay:before {
       content: "";
       position: absolute;
@@ -9265,7 +9264,7 @@ a {
 }
 
 .v-h-full {
-  height: 100vh;
+  height: calc(100vh - 104px);
   min-height: 700px; 
 
 }
@@ -9689,7 +9688,7 @@ a {
   .main-text-box {
     width: 100%;
     white-space: nowrap; 
-    margin: 50px 0 30px;
+    margin: 30px 0 30px;
     padding: 20px 0;
     text-transform: uppercase;
     /* background: #000; */

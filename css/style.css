@@ -9992,7 +9992,10 @@ a {
     color: #fafafa;
   }
 
-  .project-overlay {
+  .project-life-overlay,
+  .project-capaTrip-overlay,
+  .project-Pulmuone-overlay,
+  .project-jigushop-overlay {
     width: 100%;
     height: 100%;
     position: fixed;
@@ -10004,8 +10007,59 @@ a {
     display: none;
   }
 
-  .project-overlay .overlay-content {
+  .project-life-overlay .btn_close,
+  .project-capaTrip-overlay .btn_close,
+  .project-Pulmuone-overlay .btn_close,
+  .project-jigushop-overlay .btn_close {
+    position: fixed;
+    top: 20px;
+    right: 50px;
+    cursor: pointer;
+  }
+
+  .project-life-overlay .overlay-content,
+  .project-capaTrip-overlay .overlay-content,
+  .project-Pulmuone-overlay .overlay-content,
+  .project-jigushop-overlay .overlay-content {
    text-align: center;
+
+   transition: transform 0.3s ease;
+  }
+
+  .project-capaTrip-overlay .overlay-content img {
+    max-width: 1200px;
+  }
+
+  .project-jigushop-overlay {
+    overflow: hidden;
+  }
+
+  .project-jigushop-overlay .overlay-content {
+    display: flex;
+    width: max-content;
+  }
+
+  .project-jigushop-overlay .prev_btn {
+    width: 120px;
+    height: 120px;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+  }
+
+  .project-jigushop-overlay .next_btn {
+    width: 120px;
+    height: 120px;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+  }
+
+
+  .project-jigushop-overlay .overlay-content .portfolio_jigu {
+    width: 100vw;
   }
 
   body.overlay-open {

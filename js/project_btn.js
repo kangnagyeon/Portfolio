@@ -1,4 +1,56 @@
-$('#portfiolio .life_diffuser').click(function(){
-  $('.project-overlay').show();
+// 상세페이지
+$('#portfiolio .life_diffuser button').click(function(){
+  $('.project-life-overlay').show();
   $('body').addClass('overlay-open');
+  $('.project-life-overlay').scrollTop(0);
+});
+
+$('.project-life-overlay .btn_close').click(function(){
+  $('.project-life-overlay').hide();
+  $('body').removeClass('overlay-open');
+});
+
+
+// 여행 프로모션
+$('#portfiolio .Kapadokya button').click(function(){
+  $('.project-capaTrip-overlay').show();
+  $('body').addClass('overlay-open');
+  $('.project-capaTrip-overlay').scrollTop(0);
+});
+
+$('.project-capaTrip-overlay .btn_close').click(function(){
+  $('.project-capaTrip-overlay').hide();
+  $('body').removeClass('overlay-open');
+});
+
+// 제품 포스터
+$('#portfiolio .jigushop button').click(function(){
+  $('.project-jigushop-overlay').show();
+  $('body').addClass('overlay-open');
+  $('.project-jigushop-overlay').scrollTop(0);
+});
+
+$('.project-jigushop-overlay .btn_close').click(function(){
+  $('.project-jigushop-overlay').hide();
+  $('body').removeClass('overlay-open');
+});
+
+$('.project-jigushop-overlay .prev_btn').click(function(){
+  let img_width = $('.portfolio_jigu').width();
+
+  console.log(img_width);
+
+  $('.project-jigushop-overlay .overlay-content').css({'transform' : 'translateX(-100%)'});
+});
+
+// 광고 배너
+$('#portfiolio .Pulmuone button').click(function(){
+  $('.project-Pulmuone-overlay').show();
+  $('body').addClass('overlay-open');
+  $('.project-Pulmuone-overlay').scrollTop(0);
+});
+
+$('.project-Pulmuone-overlay .btn_close').click(function(){
+  $('.project-Pulmuone-overlay').hide();
+  $('body').removeClass('overlay-open');
 });

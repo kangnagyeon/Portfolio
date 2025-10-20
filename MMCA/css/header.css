@@ -1,14 +1,20 @@
 /* header */
 header {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-between;
   width: 100%;
   height: 71px;
   text-align: center;
+  position: relative;
+  z-index: 2;
+
+  /* overflow: hidden; */
 
   color: #fafafa;
 }
+
+
 
 .logo_header {
   width: 140px;
@@ -32,7 +38,12 @@ header a {
   gap: 20px;
 }
 
-.nav_header li {
+.nav_header .mmca_nav_list {
+  margin: 0 auto;
+}
+
+.nav_header .mmca_nav_list > a {
+  display: block;
   width: 140px;
   height: 71px;
   line-height: 71px;
@@ -40,9 +51,49 @@ header a {
   font-weight: 800;
 }
 
-.nav_header li:hover {
+.nav_header .mmca_nav_list > a:hover {
   opacity: 0.7;
 }
+
+.nav_header .mmca_gnb_list {
+  width: 140px;
+  position: absolute;
+  top: 60px;
+  display: none;
+}
+
+.nav_header .mmca_gnb_list::before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ddd;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transition: 0.5s;
+}
+
+.nav_header .mmca_nav_list:hover .mmca_gnb_list > a::before,
+.nav_header .mmca_gnb_list.on::before {
+  margin-left: -50%;
+  /* 가운데에서 시작해야 함 */
+  width: 100%;
+}
+
+.nav_header .mmca_gnb_list li > a {
+  display: block;
+  line-height: 43px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.nav_header .mmca_gnb_list li > a:hover {
+  color: #457B07;
+  background: #fafafa;
+}
+
+
 
 /* mmca lab */
 .user_header {
@@ -93,6 +144,7 @@ header a {
   align-items: center;
   cursor: pointer;
   text-transform: uppercase;
+  position: relative;
 }
 
 .dropdown_icon {
@@ -107,26 +159,24 @@ header a {
   background: none;
 }
 
-.user_lange .lange_list {
-  position: relative;
-  z-index: 2;
-}
-
 .user_lange .lange_list .lange_item {
   display: none;
   position: absolute;
-  top: 44px;
-  left: -25px;
+  z-index: 99;
+  top: 59px;
+  left: 0;
   text-align: left;
-  padding: 0 22px;
+  width: 60px;
 }
 
 .user_lange .lange_list .lange_item li {
-  margin-bottom: 10px;
+  padding: 5px 0;
+  text-align: center;
 }
 
 .user_lange .lange_list .lange_item li.on {
   color: #457B07;
+  background: #fafafa;
   text-decoration: underline;
 }
 

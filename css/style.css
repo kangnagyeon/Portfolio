@@ -10015,6 +10015,11 @@ a {
     top: 20px;
     right: 50px;
     cursor: pointer;
+    z-index: 3;
+  }
+
+  .swiper-button-next,.swiper-button-prev {
+    z-index: 2;
   }
 
   .project-life-overlay .overlay-content,

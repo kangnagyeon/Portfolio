@@ -27,7 +27,7 @@ $('.project-capaTrip-overlay .btn_close').click(function(){
 $('#portfiolio .jigushop button').click(function(){
   $('.project-jigushop-overlay').show();
   $('body').addClass('overlay-open');
-  $('.project-jigushop-overlay').scrollTop(0);
+  $('.project-capaTrip-overlay').scrollTop(0);
 });
 
 $('.project-jigushop-overlay .btn_close').click(function(){
@@ -35,12 +35,17 @@ $('.project-jigushop-overlay .btn_close').click(function(){
   $('body').removeClass('overlay-open');
 });
 
-$('.project-jigushop-overlay .prev_btn').click(function(){
-  let img_width = $('.portfolio_jigu').width();
+// 제품 포스터 swiper
+const swiper = new Swiper('.project-jigushop-overlay', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: false,
 
-  console.log(img_width);
-
-  $('.project-jigushop-overlay .overlay-content').css({'transform' : 'translateX(-100%)'});
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 });
 
 // 광고 배너

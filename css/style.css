@@ -562,9 +562,11 @@ progress {
 
 .about-items {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   margin: 0 30px;
+  gap: 50px;
 }
 
 .about-items .about_me {
@@ -592,6 +594,10 @@ progress {
   font-size: 1.75rem;
   font-weight: 500;
   color: #C85B3A;
+}
+
+.about-items .about_list {
+  display: flex;
 }
 
 @media screen and (max-width: 991px) {

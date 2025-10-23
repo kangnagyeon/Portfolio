@@ -11,10 +11,10 @@ $('.portfolio-menu ul li a').click(function(){
 
   if (portfolio_list === 'all') {
     $('.portfolio-list').hide().css({'opacity' : 0});
-    $('.portfolio-list[date-category="all"]').show().animate({opacity : 1}, 300);
+    $('.portfolio-list[date-category="all"]').show().animate({opacity : 1}, 500);
   } else {
     $('.portfolio-list').hide().css({'opacity' : 0});
-    $('.portfolio-list[date-category="' + portfolio_list + '"]').show().animate({opacity : 1}, 300);
+    $('.portfolio-list[date-category="' + portfolio_list + '"]').show().animate({opacity : 1}, 500);
   }
 });
 

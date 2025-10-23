@@ -592,7 +592,7 @@ progress {
 
 .about-items .text_area .about_text {
   font-size: 1.125rem;
-  color: #3e4147;
+  color: #282a2e;
   margin-bottom: 6px;
 }
 
@@ -635,7 +635,6 @@ progress {
   color: 3e4147;
   font-size: 1.125rem;
   margin-bottom: 10px;
-  font-weight: 500;
 }
 
 .about-items .about_list .about-education .edu-item time {
@@ -746,7 +745,6 @@ progress {
 
 .portfolio-list {
   gap: 150px 6.82%;
-  transition: 0.3s;
 }
 
 

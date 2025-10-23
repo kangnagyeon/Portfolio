@@ -1,7 +1,18 @@
-header {
-  background: rgba(0, 0, 0, 0.68);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Pretendard; 
 }
 
+header {
+  background: #525252;
+}
+
+header .mmca_gnb_list,
+header .lange_item {
+  background: #525252;
+}
 
 /* search */
 
@@ -62,6 +73,7 @@ header {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 9;
 }
 
 .location-dropdown .location {
@@ -75,6 +87,8 @@ header {
   justify-content: space-between;
   font-size: 1.25rem;
   font-weight: 500;
+  background: #fff;
+  cursor: pointer;
 }
 
 .location-dropdown .location-list {
@@ -85,12 +99,23 @@ header {
   border-radius: 20px;
   margin-top: 4px;
   display: none;
+  background: #fff;
 }
 
 .location-dropdown .dropdown-item {
   width: 100%;
   padding: 8px 0 8px 16px;
   position: relative;
+}
+
+.location-dropdown .dropdown-item a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.location-dropdown .dropdown-item.on {
+  color: #457B07;
 }
 
 .location-dropdown .dropdown-item:not(:first-child)::before {
@@ -121,7 +146,7 @@ header {
   display: flex;
 }
 
-.exhibition-page .exhibition-filter li {
+.exhibition-page .exhibition-filter li button {
   padding: 11px 15px;
   font-size: 1.25rem;
   font-weight: 500;
@@ -132,18 +157,30 @@ header {
 }
 
 .exhibition-card {
-  display: flex;
+  max-width: 1400px;
+  display: none;
   flex-wrap: wrap;
-  gap: 147px 52px;
+  row-gap: 147px;
   margin-bottom: 170px;
 }
 
 .exhibition-card .exhibition-item {
-  width: 311px;
+  width: 25%;
+}
+
+.exhibition-card .exhibition-item a {
   display: flex;
   flex-direction: column;
   gap: 27px;
+}
 
+.exhibition-card .exhibition-item a {
+  margin: 0 26px;
+}
+
+.exhibition-card .exhibition-item:nth-child(4n) a {
+  margin: 0;
+  padding: 0 26px;
 }
 
 .exhibition-card .exhibition-item .poster {
@@ -195,6 +232,36 @@ header {
   color: #676767;
   margin-top: 12px;
 }
+
+/* @media screen and (max-width: 1600px) {
+  .exhibition-card .exhibition-item {
+    width: 33.33%;
+  } 
+
+  .exhibition-card .exhibition-item a {
+    margin: 0 26px;
+  }
+
+  .exhibition-card .exhibition-item:nth-child(3n) a {
+    margin: 0;
+    padding: 0 26px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .exhibition-card .exhibition-item {
+    width: 50%;
+  } 
+
+  .exhibition-card .exhibition-item a {
+    margin: 0 26px;
+  }
+
+  .exhibition-card .exhibition-item:nth-child(2n) a {
+    margin: 0;
+    padding: 0 26px;
+  }
+} */
 
 /* 페이지네이션 */
 .pagenation {

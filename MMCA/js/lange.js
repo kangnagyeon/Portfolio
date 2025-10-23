@@ -1,3 +1,3 @@
-$('.lange_list').click(function(){
+$('.user_lange').click(function(){
   $('.lange_item').slideToggle();
 });

@@ -28,6 +28,20 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'OngleIpSeaBreeze';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2510-1@1.0/Ownglyph_the_sea_breeze-Rg.woff2') format('woff2');
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GabiaSai';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2510-1@1.0/GabiaSai-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-display: swap;
+}
+
 
 :root {
   --bs-blue: #0d6efd;
@@ -570,10 +584,10 @@ progress {
 }
 
 .about-items .text_area .intro-line {
-  font-size: 1.75rem;
+  font-size: 2.125rem;
   color: #000;
   margin-bottom: 15px;
-  font-family: 'IncheonEducation';
+  font-family: 'GabiaSai';
 }
 
 .about-items .text_area .about_text {
@@ -584,7 +598,7 @@ progress {
 
 
 .about-items .text_area span {
-  font-size: 1.75rem;
+  font-size: 2.125rem;
   font-weight: 500;
   color: #C85B3A;
 }
@@ -594,7 +608,7 @@ progress {
   display: flex;
   gap: 50px;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
 }
 
 .about-items .about_list .about-education {
@@ -621,22 +635,56 @@ progress {
   color: 3e4147;
   font-size: 1.125rem;
   margin-bottom: 10px;
+  font-weight: 500;
 }
 
 .about-items .about_list .about-education .edu-item time {
   display: block;
+  color: #949494;
+  font-weight: 400;
 }
+
+/* .about-items .about_list .skill_list {
+  max-width: 400px;
+} */
 
 .about-items .about_list .skills {
   width: 100%;
   display: flex;
-  gap: 30px;
-  justify-content: center;
+  gap: 10px;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 
 .about-items .about_list .skills img {
-  width: 70px;
+  width: 50px;
+}
+
+
+
+@media screen and (max-width
+: 890px) {
+  .about-items .about_list {
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+  }
+
+  .about-items .about_list .more_btn {
+    margin: 0 auto;
+  }
+
+  .about-items .about_list .about_info {
+    text-align: center;
+  }
+
+  .profile-info-box {
+    text-align: center;
+  }
+
+  .about-items .about_list .skills {
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -646,12 +694,8 @@ progress {
   }
 }
 
-@media screen and (max-width
-: 768px) {
-  .about_list {
-    flex-direction: column;
-  }
-}
+
+
 
 
 #portfiolio {
@@ -666,15 +710,15 @@ progress {
 .portfolio-menu ul {
   display: flex;
   list-style: none;
-  gap: 50px;
+  /* gap: 20px; */
   justify-content: center;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
   padding: 0;
 }
 
 .portfolio-menu ul li a {
   display: block;
-  font-size: 1.75rem;
+  font-size: 1.25rem;
   font-weight: 500;
   text-transform: uppercase;
   position: relative;
@@ -710,21 +754,17 @@ progress {
   .portfolio-list {
     gap: 100px 6.82%;
   }
-
-  .portfolio-menu ul li a {
-    font-size: 1.25rem;
-  }
 }
 
 @media screen and (max-width: 1200px) {
   .portfolio-menu ul li a {
-    font-size: 1rem;
+    font-size: 1.125rem;
   }
 }
 
 @media screen and (max-width: 991px) {
   .portfolio-menu ul li a {
-    font-size: 0.875rem;
+    font-size: 1rem;
   }
 
   .portfolio-menu ul {
@@ -740,7 +780,19 @@ progress {
 
 @media screen and (max-width: 767px) {
   .portfolio-menu ul li a {
-    font-size: 0.875rem;
+    font-size: 1rem;
+    padding: 15px 25px;
+  }
+
+  .portfolio-menu ul {
+    gap: 0px;
+  }
+}
+
+@media screen and (max-width: 658px) {
+  .portfolio-menu ul li a {
+    font-size: 1rem;
+    padding: 10px 20px;
   }
 
   .portfolio-menu ul {
@@ -9383,7 +9435,7 @@ a {
 .text_area {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 30px;
 }
 
 .text_area p {
@@ -9424,6 +9476,7 @@ a {
 }
 
 .btn.btn-black {
+  width: 190px;
   background-color: #222;
   display: flex;
   color: #fff;
@@ -10199,7 +10252,8 @@ a {
 
 
   .project-jigushop-overlay .overlay-content .portfolio_jigu {
-    width: 100vw;
+    width: 100%;
+    height: 100%;
   }
 
   body.overlay-open {

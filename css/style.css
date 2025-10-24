@@ -800,6 +800,21 @@ progress {
   }
 }
 
+@media screen and (max-width: 610px) {
+  .portfolio-menu ul li a {
+    font-size: 0.85rem;
+    padding: 10px 15px;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .portfolio-menu ul li a {
+    font-size: 0.725rem;
+    padding: 10px 10px;
+  }
+}
+
+
 
   .row > * {
     -ms-flex-negative: 0;
@@ -10184,6 +10199,35 @@ a {
       gap: 20px;
     }
   }
+
+  @media screen and (max-width: 580px) {
+    .portfolio-list {
+      gap: 30px;
+    }
+
+    #portfiolio .portfolio-items {
+      transform: scale(90%);
+    }
+
+    .portfolio-menu ul {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    .portfolio-list {
+      gap: 0;
+    }
+
+    #portfiolio .portfolio-items {
+      transform: scale(80%);
+    }
+
+    .portfolio-menu ul {
+      margin-bottom: 20px;
+    }
+  }
+
 
   .project-life-overlay,
   .project-capaTrip-overlay,

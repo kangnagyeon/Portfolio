@@ -368,21 +368,21 @@
   display: flex;
   justify-content: center;
   gap: 20px;
-  
+  width: 100%;
 }
 
 .content_poster .exhibition {
-  width: 264px;
-  height: 449px;
+  width: 20%;
   overflow: hidden;
 }
 
 .exhibition-itme {
-  flex: 0 0 264px;
+  flex: 0 0 100%;
   width: 100%; /* 한 번에 한 슬라이드씩 보이도록 */
 }
 
 .content_poster .exhibition-list {
+  width: 100%;
   overflow: hidden;
   display: flex;
   transition: transform 0.5s ease;
@@ -465,8 +465,17 @@
 } */
 
 /* seou */
+@media screen and (max-width: 1450px) {
+  .content {
+    padding: 0 30px;
+  }
+}
 
-
+@media screen and (max-width: 1200px) {
+  .poster_text {
+    font-size: 1.25rem;
+  }
+}
 
 /* section_2,3 */
 .box {
@@ -565,12 +574,14 @@
 /* 뉴스레터 */
 
 .MMCA_news {
-  width: 680px;
+
   height: 501px;
   background-color: #fafafa;
+  /* overflow: hidden; */
 }
 
 .news-letter-header {
+  width: 680px;
   height: 41px;
   font-size: 2.1875rem;
   font-weight: 800;
@@ -599,7 +610,6 @@
 
 .newsletter-items .swiper-slide {
   width: auto;
-  flex-shrink: 0;
 }
 
 .newsletter-items .swiper-slide:last-child {
@@ -629,6 +639,43 @@
   background-color: #fafafa;
   font-size: 0.875rem;
   font-weight: 400;
+}
+
+@media screen and (max-width: 1400px) {
+  .content_second {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 200px;
+    padding: 80px 50px 0;
+  }
+
+  .new {
+    width: 100%;
+    padding: 0 100px;
+  }
+
+  .news-list ul li {
+    width: 100%;
+  }
+
+  .news-list ul li a {
+    display: flex;
+    width: 100%;
+  }
+
+  .news-title {
+    flex-grow: 2;
+  }
+
+  .news-location {
+    flex-grow: 1;
+  }
+
+  .MMCA_news {
+    width: 100%;
+    padding: 0 100px;
+  }
 }
 
 /* section_3 */
@@ -720,4 +767,10 @@
   position:absolute;
   top: -99px;
   left: 836px;
+}
+
+@media screen and (max-width: 1400px) {
+  .residency-changdong {
+    width: 50%;
+  }
 }

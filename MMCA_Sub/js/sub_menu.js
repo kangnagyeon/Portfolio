@@ -1,5 +1,3 @@
-$(document).ready(function(){
-  $('.location').click(function(){
-    $('.location-list').slideToggle();
-  });
+$('.location').click(function(){
+  $('.location-list').slideToggle();
 });

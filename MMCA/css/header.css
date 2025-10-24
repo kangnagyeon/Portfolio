@@ -185,7 +185,7 @@ header a {
 /* menu */
 .hamburger {
   position: fixed;
-  left: 95%;
+  right: 60px;
   top: 50%;
   background: none;
   z-index: 12;
@@ -224,7 +224,7 @@ header a {
 
 /* content */
 .content {
-  width: 1400px;
+  max-width: 1400px;
   margin: 0 auto;
   position: relative;
 }

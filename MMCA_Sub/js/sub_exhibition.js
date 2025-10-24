@@ -2,8 +2,8 @@
 $('.exhibition-card').hide();
 $('.exhibition-card[date-category="all"]').show();
 
-$('.exhibition-page .exhibition-filter li').click(function(){
-  $('.exhibition-page .exhibition-filter li').removeClass('on');
+$('.exhibition-filter li').click(function(){
+  $('.exhibition-filter li').removeClass('on');
   $(this).addClass('on');
 
   var exhibition = $(this).attr('date-filter');

@@ -12,6 +12,7 @@ header {
   /* overflow: hidden; */
 
   color: #fafafa;
+  padding: 0 80px;
 }
 
 
@@ -19,7 +20,6 @@ header {
 .logo_header {
   width: 140px;
   height: 71px;
-  margin-left: 80px;
   
   font-size: 2.2rem;
   font-weight: 900;
@@ -98,7 +98,6 @@ header a {
 /* mmca lab */
 .user_header {
   /* text-align: center; */
-  margin-right: 70px;
   display: flex;
   font-size: 0.93rem;
   font-weight: 500;
@@ -185,7 +184,7 @@ header a {
 /* menu */
 .hamburger {
   position: fixed;
-  left: 95%;
+  right: 60px;
   top: 50%;
   background: none;
   z-index: 12;
@@ -227,4 +226,20 @@ header a {
   width: 1400px;
   margin: 0 auto;
   position: relative;
+}
+
+@media screen and (max-width: 1400px) {
+  .mmca_btn {
+    display: none;
+  }
+
+  header {
+    padding: 0 50px;
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  .nav_header {
+    display: none;
+  }
 }

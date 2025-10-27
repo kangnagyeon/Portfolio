@@ -9491,6 +9491,7 @@ a {
 }
 
 .btn.btn-black {
+  width: 200px;
   background-color: #222;
   color: #fff;
   padding: 14px 30px;

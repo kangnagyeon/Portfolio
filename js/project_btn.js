@@ -1,20 +1,20 @@
 // 포트폴리오 메뉴 초기 설정
 $('.portfolio-list').hide();
-$('.portfolio-list[date-category="all"]').css({'display' : 'flex'});
+$('.portfolio-list[data-category="all"]').css({'display' : 'flex'});
 
 // 포트폴리오 메뉴
 $('.portfolio-menu ul li a').click(function(){
   $('.portfolio-menu ul li a').removeClass('on');
   $(this).addClass('on');
 
-  var portfolio_list = $(this).attr('date-filter');
+  var portfolio_list = $(this).attr('data-filter');
 
   if (portfolio_list === 'all') {
     $('.portfolio-list').hide().css({'opacity' : 0});
-    $('.portfolio-list[date-category="all"]').show().animate({opacity : 1}, 500);
+    $('.portfolio-list[data-category="all"]').show().animate({opacity : 1}, 500);
   } else {
     $('.portfolio-list').hide().css({'opacity' : 0});
-    $('.portfolio-list[date-category="' + portfolio_list + '"]').show().animate({opacity : 1}, 500);
+    $('.portfolio-list[data-category="' + portfolio_list + '"]').show().animate({opacity : 1}, 500);
   }
 });
 

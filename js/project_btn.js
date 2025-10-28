@@ -7,7 +7,7 @@ $('.portfolio-menu ul li a').click(function(){
   $('.portfolio-menu ul li a').removeClass('on');
   $(this).addClass('on');
 
-  var portfolio_list = $(this).attr('date-filter');
+  var portfolio_list = $(this).attr('data-filter');
 
   if (portfolio_list === 'all') {
     $('.portfolio-list').hide().css({'opacity' : 0});

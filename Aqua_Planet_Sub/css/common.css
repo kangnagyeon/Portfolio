@@ -1,0 +1,312 @@
+.BG {
+  width: 100%;
+  background-image: url(../img/bg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* header */
+
+/* top */
+header {
+  width: 100%;
+  z-index: 999999;
+  backdrop-filter: blur(20px);
+
+  height: 142px;
+  /* overflow: hidden; */
+}
+
+.header-top {
+  width: 100%;
+  height: 43px;
+  display: flex;
+  padding: 0 30px;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--black);
+  color: var(--black);
+}
+
+
+
+/* 장소 */
+.header-top .location {
+  display: flex;
+  font-size: 0.875rem;
+  gap: 45px;
+  align-items: center;
+  font-weight: 600;
+}
+
+.header-top .location .iocation-item {
+  position: relative;
+}
+
+.header-top .location-selec {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+
+
+/* 시간 */
+.header-top .operation-time {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+
+}
+
+/* 고객센터 */
+.header-top .user {
+  display: flex;
+  gap: 27px;
+
+}
+
+.header-top .user-umber {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/* 언어 */
+.header-top .lange {
+  display: flex;
+  align-items: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.header-top .lange ul {
+  display: flex;
+  gap: 15px;
+}
+
+.header-top .lange li {
+  color: rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  position: relative;
+  line-height: 14px;
+}
+
+.header-top .lange li.on {
+  color: var(--black);
+}
+
+.header-top .lange li.on a {
+  padding: 0 5px;
+  background: var(--point-color);
+  border-radius: 7px;
+}
+
+.header-top .lange ul li:not(:first-child)::before {
+  content: '';
+  width: 1px;
+  height: 7px;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -7px;
+}
+
+/* bottom */
+.header-nav {
+  display: flex;
+  padding: 20px 30px;
+  width: 100%;
+  height: 100px;
+  /* align-items: center; */
+  justify-content: space-between;
+
+  background: var(--white);
+  overflow: hidden;
+}
+
+/* 내비게이션 */
+.header-nav nav .nav_menu {
+  display: flex;
+}
+
+.header-nav nav .nav_menu .nav-item { 
+  text-align: center;
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--black);
+  z-index: 100;
+}
+
+.header-nav nav .nav_menu .nav-item > a {
+  width: 172px;
+  line-height: 59px;
+}
+
+.header-nav nav .sub_menu {
+  width: 172px;
+  margin-top: 20px;
+  padding-bottom: 25px;
+}
+
+.header-nav nav .sub_menu .sub-item > a {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.header-nav nav .sub_menu .sub-item:last-child > a {
+  margin-bottom: 0;
+}
+
+.header-nav nav .nav-item > a:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.header-nav nav .sub-item > a:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.header-nav nav .nav-item > a::before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 3px;
+  background: var(--black);
+  position: absolute;
+  top: 68px;
+  transition: 0.3s;
+}
+
+.header-nav nav .nav-item > a:hover::before,
+.header-nav nav .nav-item.on > a::before {
+  width: 100%;
+}
+
+/* 티켓, 로그인 */
+.header-nav .user-quick-actions {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+
+
+.header-nav .user-login a {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: var(--black);
+}
+
+.header-nav .user-login span {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+
+/* container */
+.container {
+  width: 1440px;
+  /* height: 100vh; */
+  margin: 0 auto;
+  position: relative;
+}
+
+/* 섹션 내비게이션 */
+/* .section_hamburger {
+  font-size: 0.875rem;
+  font-weight: 500;
+
+  position: fixed;
+  top: 523px;
+
+}
+
+.section_hamburger ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.section_hamburger li, a {
+  display: flex;
+  align-items: center;
+}
+
+.section_hamburger span {
+  display: inline-block;
+  width: 30px;
+  height: 2px;
+  background: var(--white);
+  margin: 5px 0;
+}
+
+.section_hamburger li.active span {
+  width: 70px;
+}
+
+.section_hamburger li p {
+  display: none;
+}
+
+.section_hamburger li.active p {
+  display: block;
+} */
+
+#fp-nav ul li:last-child {
+  display: none;
+  /* 마지막 내비게이션 미표시 */
+}
+
+
+/* event section */
+.fp-viewing-3 .header-nav.dark nav li a,
+.fp-viewing-4 .header-nav.dark nav li a,
+.fp-viewing-5 .header-nav.dark nav li a {
+  color: var(--black);
+}
+
+.fp-viewing-3 .header-nav.dark nav .nav-item > a::before,
+.fp-viewing-4 .header-nav.dark nav .nav-item > a::before,
+.fp-viewing-5 .header-nav.dark nav .nav-item > a::before {
+  background: var(--black);
+}
+
+.fp-viewing-3 .header-top.dark,
+.fp-viewing-4 .header-top.dark,
+.fp-viewing-5 .header-top.dark {
+  border-color: var(--black);
+  color: var(--black);
+}
+
+.fp-viewing-3 .header-top.dark .lange li,
+.fp-viewing-4 .header-top.dark .lange li,
+.fp-viewing-5 .header-top.dark .lange li {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.fp-viewing-3 .header-top.dark .lange li.on,
+.fp-viewing-4 .header-top.dark .lange li.on,
+.fp-viewing-5 .header-top.dark .lange li.on {
+  color: rgba(0, 0, 0, 1);
+}
+
+/* .header-top.dark .lange li.on {
+  color: var(--black);
+} */
+
+.fp-viewing-3 .header-top.dark .lange ul li:not(:first-child)::before,
+.fp-viewing-4 .header-top.dark .lange ul li:not(:first-child)::before,
+.fp-viewing-5 .header-top.dark .lange ul li:not(:first-child)::before {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.fp-viewing-3 .header-nav.dark .user-login span, 
+.fp-viewing-4 .header-nav.dark .user-login span,
+.fp-viewing-5 .header-nav.dark .user-login span {
+  color: var(--black);
+}

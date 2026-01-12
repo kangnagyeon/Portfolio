@@ -196,13 +196,16 @@ body.no-scroll {
   align-items: center;
 }
 
-.exhibition-content .content-header .content-brochure {
+.exhibition-content .content-header .content-brochure button {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--brand-color);
   border: 1px solid var(--brand-color);
   border-radius: 50px;
   padding: 20px 50px;
 }
 
-.exhibition-content .content-header .content-brochure:hover {
+.exhibition-content .content-header .content-brochure:hover button {
   background: var(--brand-color);
 }
 
@@ -211,11 +214,11 @@ body.no-scroll {
 }
 
 
-.exhibition-content .content-header .content-brochure button {
+/* .exhibition-content .content-header .content-brochure button {
   font-size: 1.5rem;
   font-weight: 500;
   color: var(--brand-color);
-}
+} */
 
 .exhibition-content .content-info {
   margin-top: 50px;

@@ -1,0 +1,396 @@
+header {
+  background: #525252;
+}
+
+header .mmca_gnb_list,
+header .lange_item {
+  background: #525252;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+/* 현재페이지 */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.breadcrumb p {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  margin: 10px;
+
+  color: #6C6C6C;
+}
+
+.breadcrumb img {
+  width: 20px;
+  height: 20px;
+}
+
+/* exhibition-info */
+.exhibition {
+  margin-top: 40px;
+}
+
+.exhibition .exhibition-label {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin: 10px;
+}
+
+.exhibition .exhibition-hero {
+  margin-top: 35px;
+  padding-top: 40px;
+  padding-bottom: 140px;
+  margin-bottom: 50px;
+
+  border-top: 2px solid #1a1a1a;
+  border-bottom: 2px solid #1a1a1a;
+}
+
+.exhibition .exhibition-hero .share-icon {
+  display: flex;
+  padding-right: 40px;
+}
+
+.exhibition .exhibition-hero .share-icon button {
+  margin-left: auto;
+}
+
+.exhibition .exhibition-inner {
+  margin-top: 60px;
+  display: flex;
+  gap: 100px;
+}
+
+.exhibition-inner .exhibition-inner-right .exhibition-title {
+  font-size: 4rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+}
+
+.exhibition-inner .exhibition-inner-right .exhibition-description {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+
+.exhibition-inner .exhibition-inner-right .exhibition-date {
+  display: flex;
+  gap: 45px;
+
+  font-size: 1.5625rem;
+  font-weight: 500;
+  color: var(--gray-scale600);
+
+  margin: 70px 0 30px;
+}
+
+.exhibition-inner .exhibition-inner-right .exhibition-artists {
+  font-size: 1.5625rem;
+  font-weight: 500;
+  color: var(--gray-scale600);
+
+  margin-bottom: 50px;
+}
+
+.exhibition-inner .exhibition-inner-right .exhibition-btn {
+  width: 273px;
+
+  border: 1px solid var(--brand-color);
+  border-radius: 100px;
+}
+
+.exhibition-inner .exhibition-inner-right .exhibition-btn:hover {
+  border: 1px solid var(--brand-color);
+  border-radius: 100px;
+  background: var(--brand-color);
+
+  /* transition: background 0.3s ease; */
+}
+
+.exhibition-inner .exhibition-inner-right .exhibition-btn:hover button {
+  color: var(--white);
+
+  /* transition: color 0.3s ease; */
+}
+
+.exhibition-inner .exhibition-inner-right .exhibition-btn button {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--brand-color);
+
+  padding: 20px 80px;
+}
+
+/* notice */
+.notice {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--gray-scale600);
+  margin-bottom: 140px;
+}
+
+.notice .notice-info {
+  margin-left: 40px;
+}
+
+.notice .notice-info li {
+  margin-top: 30px;
+}
+
+/* 전시 기획 */
+.exhibition-planning .planning-header,
+.exhibition-content .content-title-wrap {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.exhibition-planning .planning-header .planning-bar,
+.exhibition-content .content-header .content-bar {
+  display: block;
+  width: 10px;
+  height: 48px;
+  background: var(--brand-color);
+}
+
+.exhibition-planning .planning-header .planning-title,
+.exhibition-content .content-header .content-title {
+  font-size: 2.1875rem;
+  font-weight: 500;
+
+  padding: 10px 0;
+}
+
+.exhibition-planning .planning-content {
+  margin-top: 50px;
+  padding-left: 40px;
+  margin-bottom: 140px;
+}
+
+.exhibition-planning .planning-content .planning-text {
+  font-size: 1.625rem;
+  font-weight: 400;
+}
+
+.exhibition-planning .planning-content .planning-text:nth-child(1) {
+  margin-bottom: 30px;
+}
+
+/* 전시 내용 */
+.exhibition-content .content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.exhibition-content .content-header .content-brochure {
+  border: 1px solid var(--brand-color);
+  border-radius: 50px;
+  padding: 20px 50px;
+}
+
+.exhibition-content .content-header .content-brochure:hover {
+  background: var(--brand-color);
+}
+
+.exhibition-content .content-header .content-brochure:hover button {
+  color: var(--white);
+}
+
+
+.exhibition-content .content-header .content-brochure button {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--brand-color);
+}
+
+.exhibition-content .content-info {
+  margin-top: 50px;
+  padding-left: 40px;
+  margin-bottom: 200px;
+
+  font-size: 1.625rem;
+  font-weight: 400;
+}
+
+.exhibition-content .content-info .content-list {
+  margin: 40px 0 40px 44px;
+}
+
+.exhibition-content .content-info ul li:nth-child(2) {
+  margin: 20px 0;
+}
+
+.exhibition-content .content-info ul li {
+  list-style-type: disc;
+}
+
+/* 전시 일정 */
+.program-schedule {
+  width: 100%;
+  border-collapse: separate; 
+  border-spacing: 40px 10px;
+
+  margin-bottom: 176px;
+}
+
+.program-schedule .shadow,
+.program-schedule .work-404-622,
+.program-schedule .genko,
+.program-schedule .hutan,
+.program-schedule .showcase,
+.program-schedule .badger-invite,
+.program-schedule .eraser,
+.program-schedule .coming,
+.program-schedule .hwi-pan {
+  height: 126px;
+}
+
+.program-schedule .schedule-date {
+  width: 200px;
+}
+
+.program-schedule .schedule-artist {
+  width: 480px;
+}
+
+.program-schedule .schedule-title {
+  width: 360px;
+}
+
+.program-schedule .schedule-format {
+  width: 160px;
+}
+
+
+.program-schedule tr:nth-child(1) th {
+  border-bottom: 4px solid #1a1a1a;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: start;
+  padding: 30px 20px;
+}
+
+.program-schedule .schedule-date,
+.program-schedule .schedule-artist,
+.program-schedule .schedule-title,
+.program-schedule .schedule-format {
+  font-size: 1.625rem;
+  font-weight: 500;
+  padding: 20px 0;
+
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.program-schedule .work-404-622 .schedule-date div,
+.program-schedule .schedule-title div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.program-schedule .hwi-pan .schedule-date>div {
+  display: flex;
+  gap: 10px;
+}
+
+.program-schedule .hwi-pan .schedule-date div div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  width: 107px;
+}
+
+.program-schedule .hwi-pan .schedule-date div div p:nth-child(2) {
+  text-align: end;
+}
+
+/* 이벤트 */
+.event {
+  margin-bottom: 200px;
+}
+.event h4 {
+  font-size: 2.1875rem;
+  font-weight: 500;
+
+  margin-bottom: 60px;
+}
+
+.event .event-list {
+  display: flex;
+  /* gap: 80px; */
+  width: 1400px;
+  overflow: hidden;
+}
+
+/* 브로슈어 */
+.section-bro {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.brochure {
+  width: 810px;
+  height: 300px;
+  border-radius: 20px;
+
+  /* display: none; */
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background: #fafafa;
+}
+
+.brochure .close-btn {
+  display: flex;
+  padding-right: 40px;
+  margin-left: auto;
+  padding-top: 40px;
+}
+
+.brochure .flie,
+.brochure .down {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--brand-color);
+  padding: 20px 30px;
+  border: 2px solid var(--brand-color);
+  border-radius: 60px;
+  cursor: pointer;
+}
+
+.brochure .flie:hover,
+.brochure .down:hover {
+  background: var(--brand-color);
+  color: var(--white);
+}
+
+.brochure .brochure-list {
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+  margin-top: 6px;
+}

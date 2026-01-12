@@ -6,12 +6,6 @@ $('.swiper[data-category="aqua_b1f"]').show().css({'opacity' : 1});
 
 
 $('.floor-2f-items .place_menu button').click(function(event){
-
-  // 🔹 a 태그 클릭이면 막지 않음
-  if ($(event.target).closest('a').length) {
-    return;
-  }
-  
   event.preventDefault();
   $('.floor-2f-items .place_menu button p').removeClass('on');
   $(this).find('p').addClass('on');

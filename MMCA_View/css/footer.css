@@ -1,0 +1,95 @@
+.end {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: #fafafa; */
+  padding-top: 70px;
+  padding-bottom: 120px;
+
+  border-top: 1px solid #CDCDCD;
+}
+
+.footer-right {
+  /* background-color: #fafafa; */
+  margin-left: 90px;
+}
+
+.footer-brand {
+  display: block;
+  margin-bottom: 30px;
+  /* background-color: #fafafa; */
+}
+
+.footer_logo {
+  font-size: 3.125rem;
+  font-weight: 900;
+  /* background-color: #fafafa; */
+}
+
+.footer-brand li:nth-child(2) {
+  font-size: 1rem;
+  font-weight: 600;
+  /* background-color: #fafafa; */
+}
+
+.footer-brand li:nth-child(2)::before {
+  content: "National Museum of";
+}
+
+.footer-brand li:nth-child(2)::after {
+  content: "Modern and Contemporary Art, Korea";
+  display: block;
+  margin-bottom: 10px;
+}
+
+.footer-name {
+  font-size: 1.875rem;
+  font-weight: 800;
+  /* background-color: #fafafa; */
+}
+
+.footer-contacts {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 30px;
+  font-size: 1rem;
+}
+
+/* .footer-contacts li {background-color: #fafafa;} */
+
+.footer-right p {
+  font-weight:500;
+  /* background-color: #fafafa; */
+  font-size: 1rem;
+}
+
+.footer-left {
+  /* background-color: #fafafa; */
+  margin-right: 90px;
+}
+
+.footer-links {
+  flex-direction: column;
+  text-align: right;
+  margin-bottom: 96px;
+  font-size: 1.125rem;
+  font-weight: 500;
+  /* background-color: #fafafa; */
+}
+
+.footer-links li {
+  margin-bottom: 7px;
+}
+
+.footer-sns {
+  display: flex;
+  gap: 10px;
+  /* background-color: #fafafa; */
+}
+
+/* .footer-links li,img {
+  background-color: #fafafa;
+} */
+
+.footer_other a {
+  display: inline;
+}

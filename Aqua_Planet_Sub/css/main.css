@@ -1,3 +1,7 @@
+body.no-scroll {
+  overflow: hidden;
+}
+
 /* main */
 .main {
   width: 100%;
@@ -410,20 +414,33 @@
   font-weight: 400;
 }
 
-.place-list {
+/* 팝업 창 */
+.popup {
+  width: 100vw;
+  height: 100vw;
+  background: rgba(0, 0, 0, 0.5);
+  
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   
+
   z-index: 19;
+}
+
+.place-list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .place-list-item {
   width:1120px;
   margin: 0 auto;
   text-align: center;
-  background: #ddd;
+  background: #fafafa;
   padding: 68px 0;
   border-radius: 20px;
 
